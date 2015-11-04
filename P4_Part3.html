@@ -1,0 +1,21 @@
+<html> 
+	<body> 
+		<script> 
+			//calculate factorial of number.
+			function factorial(n) {
+			if ((n == 0) || (n == 1))
+			return 1
+			else {
+			var result = (n * factorial(n-1) );
+			return result
+			}
+			} 
+			var x = 0
+			var y = 0;
+			x = window.prompt("Enter number:");
+			x = parseInt(x);
+			y= factorial (x);
+			document.write( "<h1 style = 'color: blue'>" + x + "!" + " is " + y + "</h1>");
+		</script> 
+	</body> 
+</html>
